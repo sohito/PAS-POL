@@ -6,27 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/drawer.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="font">
+        <div class="pc-menu">
             <section>
                 <h1>PAS-POL</h1>
                 <p>旅のモノづくりブランド</p>
             </section>
             <ul>
                 <li><a href="#">TOP</a></li>
-                <li><a href="#">PRODUCT</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">NEWS</a></li>
+                <li><a href="#product">PRODUCT</a></li>
+                <li><a href="#hero">ABOUT</a></li>
+                <li><a href="#news">NEWS</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </div>
+        <div class="sp-menu">
+            <p>MENU</p>
+            <button type="button" class="drawer-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <section class="sp-logo">
+            <h1>PAS-POL</h1>
+            <p>旅のモノづくりブランド</p>
+        </section>
     </header>
 
+    <nav class="drawer-nav">
+        <ul>
+            <li><a href="#product">PRODUCT</a></li>
+            <li><a href="#hero">ABOUT</a></li>
+            <li><a href="#news">NEWS</a></li>
+            <li><a href="">CONTACT</a></li>
+        </ul>
+    </nav>
+
     <main>
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="container">
                 <h2>旅に出よう。</h2>
                 <ul>
@@ -38,29 +60,29 @@
                 </ul>
             </div>
         </section>
-        <section class="product">
+        <section class="product" id="product">
             <div class="container">
                 <h3>PRODUCT</h3>
                 <div class="article">
                     <article>
                         <img src="img/paspol6.png" alt="">
-                        <h4>世界一周　３６５日<br>世界遺産絶景の旅</h4>
+                        <h4>世界一周　３６５日　世界遺産絶景の旅</h4>
                     </article>
                     <article>
                         <img src="img/paspol7.png" alt="">
-                        <h4>３６５日　京都<br>絶景の旅</h4>
+                        <h4>３６５日　京都　絶景の旅</h4>
                     </article>
                     <article>
                         <img src="img/paspol8.png" alt="">
-                        <h4>３６５日　北海道<br>絶景日めくりカレンダー</h4>
+                        <h4>３６５日　北海道　絶景日めくりカレンダー</h4>
                     </article>
                     <article>
                         <img src="img/paspol9.png" alt="">
-                        <h4>３６５日　北海道<br>絶景の旅</h4>
+                        <h4>３６５日　北海道　絶景の旅</h4>
                     </article>
                     <article>
                         <img src="img/paspol10.png" alt="">
-                        <h4>The World Festival Guide<br>-海外の音楽フェス完全ガイド-</h4>
+                        <h4>The World Festival Guide -海外の音楽フェス完全ガイド-</h4>
                     </article>
                     <article>
                         <img src="img/paspol11.png" alt="">
@@ -72,7 +94,7 @@
                 </div>
             </div>
         </section>
-        <section class="news">
+        <section class="news" id="news">
             <div class="container">
                 <h3>NEWS</h3>
                 <article class="content">
@@ -130,12 +152,14 @@
             </div>
         </section>
         <section class="sns">
-            <ul>
-                <li><a href="#">Share on Facebook</a></li>
-                <li><a href="#">Share on Twitter</a></li>
-                <li><a href="#">Hatena Bookmark</a></li>
-            </ul>
-
+            <div class="container">
+                <ul>
+                    <li><a href="https://www.facebook.com/share.php?" class="facebook">Share on Facebook</a></li>
+                    <li><a href="https://twitter.com/intent/tweet" class="twitter">Share on Twitter</a></li>
+                    <li><a href="#" class="hatena">Hatena Bookmark</a></li>
+                    <li><a href="#" class="line">Send to LINE</a></li>
+                </ul>
+            </div>
         </section>
     </main>
 
@@ -143,20 +167,24 @@
         <section class="footer-menu">
             <ul>
                 <li><a href="#">TOP</a></li>
-                <li><a href="#">PRODUCT</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">NEWS</a></li>
+                <li><a href="#product">PRODUCT</a></li>
+                <li><a href="#hero">ABOUT</a></li>
+                <li><a href="#news">NEWS</a></li>
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </section>
         <section class="foot">
             <div class="container">
-                <div>ロゴ</div>
+                <div class="logo">
+                    <a href="#"><h1>PAS-POL</h1></a>
+                    <p>旅のモノづくりブランド</p>
+                </div>
                 <small>Copyright © 2023 PAS-POL -旅のモノづくりブランド-｜TABIPPO All rights reserved.</small>    
             </div>
          </section>
     </footer>
 
-    
+        <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+        <script src="js/main.js"></script>
 </body>
 </html>

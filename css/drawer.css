@@ -1,0 +1,83 @@
+
+/* ドロワーのボタン部分 */
+
+.drawer-btn {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    z-index: 999;
+    cursor: pointer;
+    border: none;
+    display: block;
+    margin-left: auto;
+    background: transparent;
+}
+
+.drawer-btn span {
+    display: block;
+    width: 15px;
+    height: 1px;
+    background: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .4s;
+}
+
+.drawer-btn span:nth-child(1) {
+    transform: translate(-50%, -6px);
+}
+.drawer-btn span:nth-child(2) {
+    transform: translate(-50%, -50%);
+}
+.drawer-btn span:nth-child(3) {
+    transform: translate(-50%, 5px);
+}
+
+/* ドロワーボタンが押されたとき */
+
+.drawer-btn.active span:nth-child(1) {
+    transform: translate(-50%, 50%) rotate(225deg);
+}
+.drawer-btn.active span:nth-child(2) {
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+.drawer-btn.active span:nth-child(3) {
+    transform: translate(-50%, 50%) rotate(-225deg);
+}
+
+/* ドロワーのメニュー部分 */
+
+.drawer-nav {
+    width: 100vw;
+    height: 200px;
+    background: white;
+    transform: translateY(-200px);
+    transition: transform .5s ease;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.drawer-nav ul {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.drawer-nav a {
+    padding: 12px 0 4px;
+    border-bottom: 2px solid transparent;
+    display: inline-block;
+}
+
+.drawer-nav a:hover {
+    border-bottom: 2px solid black;
+    transition-duration: 1s;
+}
+
+/* ドロワーメニューが開くとき */
+
+.drawer-nav.open {
+    transform: translate(0, 0);
+}
