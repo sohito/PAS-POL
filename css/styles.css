@@ -441,7 +441,7 @@ article img {
 @media(max-width:700px) {
     .hero .container {
         text-align: left;
-        width: 100vw;
+        width: 80%;
         margin-left: 48px;
     }
 
@@ -528,6 +528,7 @@ article img {
 }
 
 @media(max-width:500px) {
+
     .product h3,
     .news h3 {
         text-align: center;
