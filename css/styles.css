@@ -49,6 +49,8 @@ header {
     animation: img_anime 24s ease infinite;
     color: white;
     padding: 48px 32px;
+    border-bottom-right-radius: 2000px 200px;
+    border-bottom-left-radius: 2000px 200px;
 }
 
 @keyframes img_anime {
@@ -85,6 +87,12 @@ header {
     100% {
         background-image: url(../img/paspol1.jpeg);
     }
+}
+
+.bg {
+    background: #f7f7f7;
+    height: 100vh;
+
 }
 
 .sp-logo {
